@@ -16,3 +16,6 @@ Rx:      10.90 Kbps,   Tx:       1.75 Kbps,   MaxRx:      12.50 Kbps,   MaxTx:  
 Rx:       6.41 Kbps,   Tx:       3.06 Kbps,   MaxRx:      12.50 Kbps,   MaxTx:       4.23 kbps   RxAvg:       9.99 Kbps   TxAvg:       2.72 Kbps  
 Rx:      11.65 Kbps,   Tx:       1.74 Kbps,   MaxRx:      12.50 Kbps,   MaxTx:       4.23 kbps   RxAvg:      10.32 Kbps   TxAvg:       2.52 Kbps  
 Rx:       8.21 Kbps,   Tx:       5.44 Kbps,   MaxRx:      12.50 Kbps,   MaxTx:       5.44 kbps   RxAvg:       9.97 Kbps   TxAvg:       3.01 Kbps  
+
+Install:
+  #python setup.py install
