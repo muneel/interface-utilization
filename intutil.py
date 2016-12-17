@@ -35,6 +35,7 @@ regexp = r"""
 
 pattern = re.compile(regexp, re.VERBOSE)
 
+
 def get_bytes(interface_name):
     '''returns tuple of (rx_bytes, tx_bytes) '''
     with open('/proc/net/dev', 'r') as f:
@@ -48,7 +49,8 @@ def get_bytes(interface_name):
                     return (m.group('rx_bytes'), m.group('tx_bytes'))
             a = f.readline()
 
-def run_util(interface, kbps = None):
+
+def run_util(interface, kbps=None):
     tx_max_rate, rx_max_rate = (0, 0)
     rx_avg, tx_avg, n = (0, 0, 0)
     div = 1000000
@@ -79,6 +81,7 @@ def run_util(interface, kbps = None):
         else:
             print "Rx: %10.2f Kbps,   Tx: %10.2f Kbps,   MaxRx: %10.2f Kbps,   MaxTx: %10.2f kbps   RxAvg: %10.2f Kbps"\
                   "   TxAvg: %10.2f Kbps" % (rx_rate, tx_rate, rx_max_rate, tx_max_rate, rx_avg, tx_avg)
+
 
 def main(argv):
     interface = None
