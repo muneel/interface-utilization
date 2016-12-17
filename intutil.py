@@ -1,3 +1,4 @@
+#!usr/bin/env python
 import re
 import time
 import sys
@@ -104,5 +105,7 @@ def main(argv):
     else:
         print '\n  Missing Arguments use -h for help\n'
 
-if __name__ == "__main__":
+def run_main():
     main(sys.argv[1:])
+
+if __name__ == "__main__":run_main()

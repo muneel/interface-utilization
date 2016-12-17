@@ -8,7 +8,7 @@ setup(	name="interface-utilization",
 		install_requires=[],
 		py_modules = ['intutil'],
 		entry_points = {
-       			 'console_scripts': ['intutil=intutil:main'],
+       			 'console_scripts': ['intutil=intutil:run_main'],
    			 },
 		author="Muneel",
 		author_email="muneel@hotmail.com",
